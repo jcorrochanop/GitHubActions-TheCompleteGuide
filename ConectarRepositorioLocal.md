@@ -5,5 +5,5 @@ En este documento voy a explicar los comandos esenciales para conectar un reposi
 El comando `git remote add origin` se utiliza para conectar tu repositorio local con el repositorio remoto que ya has creado.
 
 ```
-git remore add origin 
+git remore add origin https://github.com/jcorrochanop/github-crash-course.git
 ```
