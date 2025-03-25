@@ -63,3 +63,14 @@ El comando `git branch -D feature-restructure` elimina de forma forzada la rama 
 ```
 git branch -D feature-restructure
 ```
+
+## 🤝 Unir ramas
+
+Para unir los cambios de la rama `feature-restructure` a la rama `master`, primero debes situarte en `master` y luego ejecutar el merge. De esta forma, todo lo que hayas desarrollado en `feature-restructure` se integrará en la rama principal:
+
+```
+git checkout master
+git merge feature-restructure
+```
+
+Si hay conflictos, Git te avisará y tendrás que resolverlos manualmente antes de completar el merge. Una vez resueltos, haz un commit para finalizar la fusión.
