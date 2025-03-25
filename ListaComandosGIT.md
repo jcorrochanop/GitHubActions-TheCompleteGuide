@@ -47,3 +47,38 @@ Este comando sí que borra como tal los commits:
 ```
 git reset --hard 17507cd
 ```
+
+## Ramas
+
+### Crear rama y moverte automáticamente
+El comando `git branch -b feature-restructure` crea una nueva rama llamada "feature-restructure" y te cambia a ella inmediatamente, permitiéndote trabajar en cambios o reestructuraciones de manera aislada sin afectar la rama principal.
+
+```
+git branch -b feature-restructure
+```
+
+## Eliminar rama
+El comando `git branch -D feature-restructure` elimina de forma forzada la rama "feature-restructure", descartando cualquier cambio que no haya sido fusionado en otra rama. Úsalo con precaución, ya que se perderán los cambios si no están respaldados.
+
+```
+git branch -D feature-restructure
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
