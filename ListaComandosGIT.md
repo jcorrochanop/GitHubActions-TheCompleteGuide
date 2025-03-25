@@ -1,8 +1,9 @@
 # Lista de comandos git
+
 Este documento lo voy a usar para ir anotando y organizando los comandos más importantes de Git que vaya aprendiendo. La idea es tener una referencia rápida y clara mientras avanzo en mi camino con Git y DevOps.
 
 ## Ver los cambios
-El comnado git diff es un comando que muestra las diferencias línea por línea entre los archivos modificados y el último estado confirmado en el repositorio, permitiéndote ver qué cambios has hecho antes de añadirlos al área de preparación o hacer un commit.
+El comando `git diff` es un comando que muestra las diferencias línea por línea entre los archivos modificados y el último estado confirmado en el repositorio, permitiéndote ver qué cambios has hecho antes de añadirlos al área de preparación o hacer un commit.
 
 ```
 git diff
@@ -20,4 +21,29 @@ Para usar el alias, una vez creado, simplemente se escribe el nombre que le haya
 
 ```
 git hist
+```
+
+## Cambiar, revertir o eliminar commits
+
+### Cambiar de commit
+```
+git checkout 17507cd
+```
+
+### Revertir commit  
+Lo que hace realmente es añadir un nuevo commit borrando el contenido de ese commit que estás revirtiendo.
+
+```
+git revert 17507cd
+```
+Escribir el mensaje del commit, luego:
+```
+ESC > :wq > Enter
+```
+
+### Eliminar commit  
+Este comando sí que borra como tal los commits:
+
+```
+git reset --hard 17507cd
 ```
